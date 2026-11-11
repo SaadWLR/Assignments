@@ -1,0 +1,18 @@
+AI Log & Reflection
+
+What I asked AI:
+- "How do I check for duplicates and inconsistent labels in pandas?"
+- "How can I identify unusual prices without deleting them?"
+- "Can you explain the syntax for `.loc` and `.isna()`?"
+- "Why am I getting an error when comparing prices with 1000?"
+- I also asked AI for help with some pandas syntax and cleaning commands.
+
+What AI suggested that I modified or rejected:
+- My code initially gave an Error because the prices were stored as strings. AI suggested using `pd.to_numeric()` to convert them into numbers, which fixed the error.
+- I kept the unusual prices instead of deleting them and used a `needs_review` column to flag them.
+
+What I learned:
+- I learned how to use pandas commands like `.loc`, `.isna()`, and `.drop_duplicates()`.
+- I understood why data types matter when comparing numerical values.
+- I learned that cleaning data doesn't always mean removing observations. Sometimes it's better to flag them and investigate first.
+- The ai cleared up syntax concepts that weren't a strong suit of mine in this case
